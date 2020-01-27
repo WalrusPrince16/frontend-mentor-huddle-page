@@ -1,0 +1,414 @@
+
+/* Global Selectors */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    border: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 1.25rem;
+    border: none;
+    box-shadow: 3px 3px 12px 4px rgba(209,25,209,0.17);
+
+}
+
+nav button {
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 1.25rem;
+    background-color: transparent;
+}
+
+#stats,
+.stat {
+    display: flex;
+}
+
+.stat {
+    flex-direction: column;
+}
+
+.bg-img {
+    width: 100%;
+}
+.convo {
+    display: flex;
+}
+
+.convo.top,
+.convo.bottom {
+    background-color: hsl(207, 100%, 98%);
+}
+
+.bg-img {
+    min-width: 100%;
+}
+
+footer {
+    display: grid;
+    color: white;
+    text-align: left;
+    background-color: hsl(192, 100%, 9%);
+}
+
+footer h4 {
+    text-transform: uppercase;
+}
+
+footer p {
+    line-height: 1.5;
+}
+
+footer button {
+    border-radius: .9rem;
+}
+
+footer .contact-data {
+    display: flex;
+    align-items: center;
+    line-height: normal;
+}
+
+.contact-data img {
+    margin-right: 2rem;
+    transform: scale(1.75);
+}
+
+footer #social i {
+    transform: scale(2);
+    margin-right: 2rem;
+}
+
+footer .attribution {
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: center !important;
+}
+
+/* Small Phones: (375px-665px) */
+
+@media (min-width: 375px) {
+    /* imgs */ img.desktop {display: none;} img.mobile {display: block;}
+
+    body {
+        text-align: center;
+        line-height: 1.25;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        margin-bottom: 3rem;
+    }
+
+    /* Nav */
+
+    nav {
+        padding: 2rem;
+    }
+
+    nav img {
+        max-width: 40%;
+    }
+
+    nav button {
+        padding: .5rem 1.5rem;
+    }
+
+    /* Jumbo */
+
+    .connect {
+        padding: 5rem 3rem;
+    }
+
+    .connect p {
+        font-size: 1rem;
+    }
+
+    .connect button {
+        padding: 1rem 2.5rem;
+    }
+
+    /* Big Img */
+
+    #illustrations {
+        width: 80%;
+        margin: auto;
+    }
+
+    /* Stats */
+
+    #stats {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 50%;
+        height: 40rem;
+        margin: 8rem auto auto auto;
+    }
+
+    .stat img {
+        align-self: flex-start;
+        width: 20%;
+    }
+
+    .stat h2 {
+        font-size: 3.75rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+
+    /* Convos */
+
+    .convo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .convo img {
+        width: 60%;
+        height: 60%;
+        padding: 6rem 0;
+    }
+
+    .convo h3 {
+        font-size: 1.5rem;
+        padding: 0 12.5%;
+        margin: 1.5rem 0;
+    }
+
+    .convo p {
+        padding: 0 12.5%;
+        margin-bottom: 8rem;
+    }
+
+    /* Connect */
+
+    #get-connected {
+        padding-bottom: 20rem;
+    }
+
+    /* Footer */
+
+    footer {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 4rem;
+        padding: 2rem 2.5rem;
+    }
+
+    footer h4 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    footer input {
+        width: 100%;
+        height: 3rem;
+        border-radius: .5rem;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    #news-letter button {
+        width: 50%;
+        font-size: 1.1rem;
+        padding: 1rem;
+        position: relative;
+        left: 50%;
+    }
+
+    #footer-logo {
+        margin-bottom: 1.2rem;
+    }
+
+    footer .contact-data {
+        margin-bottom: 2rem;
+    }
+
+    #social {
+        padding: 2rem 0;
+    }
+}
+
+/* Landscape Phones/Tablets: (667px-1023px) */
+
+@media (min-width: 667px) {
+
+    /* Jumbo */
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .connect {
+        padding: 3rem 2rem;
+    }
+
+    button {
+        font-size: 1.25rem;
+    }
+
+    /* Stats */
+
+    #stats {
+        height: 25rem;
+    }
+
+    /* Convos */
+
+    .connect p,
+    .convo p {
+        font-size: 1.35rem;
+    }
+
+    .convo p {
+        margin-bottom: 4rem;
+    }
+
+    .convo h3 {
+        font-size: 1.6rem;
+    }
+
+    .convo img {
+        padding: 3rem 0;
+    }
+}
+
+/* Tablets: (1024px-1439px) */
+
+@media (min-width: 1023px) {
+
+    /* Footer */
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2rem;
+        grid-row-gap: 0;
+        grid-template-areas:
+            "contact   news-letter"
+            "attribution    attribution";
+    }
+
+    #contact {
+        grid-area: contact;
+        padding: 1rem;
+    }
+
+    #news-letter {
+        grid-area: news-letter;
+        padding: 1rem;
+    }
+
+    #news-letter input {
+        width: 65%;
+        margin: 0;
+        margin-right: 1rem;
+    }
+
+    #news-letter button {
+        padding: 0;
+        position: static;
+        width: 30%;
+        height: 3rem;
+    }
+
+    footer .attribution {
+        grid-area: attribution;
+    }
+
+    #email-signup {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Laptop-Desktop: (1360px and up) */
+
+@media (min-width: 1360px) {
+
+    /* imgs */ img.mobile {display: none} img.desktop {display: block}
+
+    /* Nav */
+
+    nav {
+        padding: 3rem 2rem;
+    }
+
+    /* Jumbo */
+
+    #intro {
+        padding: 8rem 10rem;
+    }
+    #intro p {
+        font-size: 1.5rem;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Stats */
+
+    #stats {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Convos */ 
+
+    .convo {
+        flex-direction: row;
+        text-align: left;
+        padding: 4rem 6rem;
+    }
+    .convo.top,
+    .convo.bottom  {
+        flex-direction: row-reverse;
+    }
+    .convo p {
+        width: 100%;
+    }
+    .convo img {
+        width: 50%;
+        padding: 2rem;
+    }
+    .convo-text {
+        width: 50%;
+        padding: 2rem;
+    }
+}
